@@ -1,0 +1,63 @@
+//variables
+
+$deepBlue: #032f3e;
+$offWhite: #f8f9fb;
+$sectionHeading: 24px;
+$bannerHeading: 46px;
+
+@mixin banner {
+  width: 100%;
+  position: relative;
+  color: white;
+  .banner-content {
+    position: absolute;
+    bottom: 10px;
+    left: 36%;
+  }
+  img {
+    width: 100%;
+    max-height: 550px;
+  }
+  span {
+    font-size: $bannerHeading;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  span.title {
+    font-weight: normal;
+    display: inline;
+  }
+}
+
+//Main Nav
+#main-nav {
+  background: $deepBlue;
+  ul {
+    width: 100%;
+  }
+  li {
+    float: left;
+    width: 20%;
+  }
+  a {
+    color: $offWhite;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+#main-nav ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+section h1 {
+  font-size: $sectionHeading;
+  color: $deepBlue;
+}
+.header-banner{
+  @include banner
+}
