@@ -1,0 +1,31 @@
+@mixin banner {
+  width: 100%;
+  position: relative;
+  color: white;
+  .banner-content {
+    position: absolute;
+    bottom: 10px;
+    left: 36%;
+  }
+  img {
+    width: 100%;
+    max-height: 550px;
+  }
+  span {
+    font-size: $bannerHeading;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  span.title {
+    font-weight: normal;
+    display: inline;
+  }
+}
+
+@mixin clearfix{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
