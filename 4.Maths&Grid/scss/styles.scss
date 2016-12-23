@@ -20,7 +20,7 @@
     display: block;
     text-align: center;
     &:hover {
-      background: #333;
+      background: lighten($deepBlue, 6);
     }
   }
 }
@@ -34,30 +34,33 @@ section h1 {
   @include banner
 }
 
-#services{
-  padding:20px 0;
-  li{
+#services {
+  padding: 20px 0;
+  li {
     float: left;
     width: (100% / 3);
     box-sizing: border-box;
     text-align: center;
   }
-  img{
+  img {
     width: 60%;
     margin: 20px 20%;
   }
-  a{
+  a {
     text-decoration: none;
     color: $deepBlue;
     font-weight: bold;
+    &:hover {
+      color: complement($deepBlue);
+    }
   }
   @include clearfix;
   margin-bottom: 60px;
 }
 
-#projects li{
+#projects li {
   @include grid(7, 1%);
-  img{
+  img {
     width: 100%;
   }
 }

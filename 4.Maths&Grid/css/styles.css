@@ -40,7 +40,7 @@ li {
     display: block;
     text-align: center; }
     #main-nav a:hover {
-      background: #333; }
+      background: #04455b; }
 
 section h1 {
   font-size: 24px;
@@ -80,6 +80,8 @@ section h1 {
     text-decoration: none;
     color: #032f3e;
     font-weight: bold; }
+    #services a:hover {
+      color: #3e1203; }
   #services:after {
     content: '';
     display: block;
