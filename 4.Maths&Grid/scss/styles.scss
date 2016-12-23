@@ -54,3 +54,10 @@ section h1 {
   @include clearfix;
   margin-bottom: 60px;
 }
+
+#projects li{
+  @include grid(7, 1%);
+  img{
+    width: 100%;
+  }
+}
